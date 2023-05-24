@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="feedback.css">
+  </head>
+  <script src="feedback.css"></script>
+  <body>
+    <div class="container">
+      <div class="item">
+        <div class="side1">
+          <div class="first">Let's get in touch</div>
+          <div class="social-link">
+          <div class="message">Thank you so much for taking the time to send this! Everyone here
+             loves to know that does our customers enjoy what we do.We are always trying
+              our best to make your experience memorable. your feedback matters a lot...</div>
+            <span class="second">Connect with us</span>
+            <ul class = "SocialMedia">
+              <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+              <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+              <li><a href="https://www.linkedin.com/in/vanshika-radadiya-845b07273/"><i class='bx bxl-linkedin' ></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="side2">
+          <h3 class="head">Feedback </h3>
+          <form class="form" onsubmit="sendEmail();reset(); return false;">
+            <div class="inputBox" >
+              Name &nbsp; &nbsp;
+              <input type="text"  id ="name" class="input" required>
+            </div>
+            <div class="inputBox">
+              Email ID
+              <input type="email" id ="email" class="input" required>
+            </div>
+            <div class="inputBox">
+              Phone No
+              <input type="tel"  class="input" id = "contact" required>
+              <div class="error" id="contacterror">hii</div><br>
+            </div>
+            <div class="inputBox">
+              Feedback
+            <textarea name="" placeholder="Message...."id="feedback" cols="20" rows="5"></textarea> 
+            </div>
+           <br><br><br><br>
+            <button class="buttonstyle" onclick="validations()">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        console.log("hi");
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "honeyradadiya04@gmail.com",
+    Password : "6DFB6384493EF2E6CE86E0DFFEAF95FEF4B3",
+    // Password : "9904615173",
+    To : 'vanshika0280@gmail.com' ,      
+    From : 'honeyradadiya04@gmail.com',
+    Subject : "Customer Feedback",
+    Body : "Name :" + document.getElementById("name").value
+    + "<br> Email : " + document.getElementById("email").value
+    + "<br> Phone : " + document.getElementById("contact").value
+    + "<br> Message : " + document.getElementById("feedback").value
+}).then(
+            message =>{
+                console.log("|HELOOOO");
+                if(message == 'OK'){
+                    alert("Your response is saved successfully");
+            }
+            else{
+                alert("Sorry your response was not recorded :(")
+            }
+        }
+        );
+      }
+    </script>
+  </body>
+</html>

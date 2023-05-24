@@ -1,0 +1,178 @@
+.sidepanel {
+    height: 500px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to bottom right,
+        white 0%,
+        #83e883db 50%,                                                                
+        yellow 50%,
+        white  100%
+    );
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    box-shadow: 1px 1px 20px 3px black;
+    border-radius: 5px;
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: black;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .openbtn{
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+/* ----------------------------------------------------------------------------------------- */
+  .total_cart_line{
+   border: 2px solid red;
+  }
+
+  .mycart{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 1px 2px 3px #000000;
+    color:yellow;
+    font-weight: 900;
+  }
+  .items_display{
+    padding: 15px;
+  }
+  
+  .total_decoration{
+    font-weight: 700;
+    padding-bottom: 30px;
+    padding-left: 10px;
+  }
+  .amount_deco{
+    color: black;
+    text-shadow: 1px 2px 3px white;
+    font-weight: bolder;
+  
+   font-size: 30px;
+  }
+  .proceed{
+    background-color:green;
+    color:white;
+    border: none;
+    width: 100px;
+    margin-left: 190px;
+    position: unset;
+    top: 60vh;
+    padding:5px;
+    margin-bottom: 10px;
+  }
+  .proceed:hover{
+    background-color: rgb(2, 47, 2);
+  }
+  .clear{
+    margin-left: 190px;
+    background-color: red;
+    color:white;
+    border: none;
+    padding:5px;
+    top: 60vh;
+    width: 100px;
+    margin-bottom: 5px;
+  
+  }
+  .clear:hover{
+    background-color: rgb(169, 26, 26)
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  /* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Stay on top */
+  top: 0;
+  right:0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* --------------carousal-------------------------- */
+.carousel-inner{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+.card{
+  box-shadow: 2px 5px 10px 0.5px black;
+}
+.nav-item ,.nav-link, .navbar-brand {
+  color:black;
+  font-weight: 900;
+  font-size: 18px;
+  padding-top: 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+  background-image: url(no9.jpg);  
+  
+}
